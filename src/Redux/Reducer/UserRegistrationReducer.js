@@ -1,19 +1,22 @@
 import * as UsersConstant from '../Constant/UsersConstant';
 
-
 const usersRegistration = {
-  users: [
-    {ho: 'Nguyen', ten: 'Linh', taiKhoan: 'linhnguyen', matKhau: '123',  email: 'linhnguyen@gmail.com', xacNhan: true}
-  ],
+  newUser: {
+    ho: '', 
+    ten: '', 
+    taiKhoan: '', 
+    matKhau: '',  
+    email: '', 
+    xacNhan: ''
+  }
 }
 
 export default (state = usersRegistration, action) => {
   switch (action.type){
-    case UsersConstant.NEW_BOOKING: {
-      
+    case UsersConstant.NEW_USER: {
+      state.newUser = {...action.user};
       return {...state}
     }
-    
   }
   return {...state}
 }

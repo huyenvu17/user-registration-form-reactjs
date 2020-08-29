@@ -1,8 +1,7 @@
 import * as UsersConstant from '../Constant/UsersConstant';
-export function addUser(user){
+export function newUser(user){
   return{
-    type: UsersConstant.NEW_BOOKING,
+    type: UsersConstant.NEW_USER,
     user,
   }
 }
-

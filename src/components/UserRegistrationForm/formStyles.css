@@ -1,0 +1,38 @@
+.registration-form{
+  width: 70%;
+  margin: auto;
+}
+.registration-form .card-header{
+  padding: 2rem 1.25rem;
+  font-size: 1.5rem;
+  background-color: #fff;
+  border: none;
+}
+.registration-form button{
+  width: 100%;
+}
+.form-group>input{
+  border:none;
+  border-bottom: 1px solid #cecece;
+  border-radius: 0;
+}
+.registration-form .form-group>label {
+  top: 38px;
+  left: 15px;
+  position: relative;
+  background-color: white;
+  padding: 0px 5px 0px 5px;
+  font-size: 1.1em;
+  transition: 0.2s;
+  pointer-events:none;
+}
+
+.registration-form .form-group.label-animate>label {
+  top: 18px !important;
+  left: 16px !important;
+  font-size: 0.9em;
+}
+.infor-form label{
+  font-size: 1rem!important;
+  font-weight: bold;
+}
